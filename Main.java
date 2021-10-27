@@ -27,6 +27,18 @@ The only thing that might sometimes be glitchy is returning slightly innaccurate
 I kept all functions on this file because VSCode allows me to close all the functions
     I am not currently working in. Had that not been the case, I would have just made 
     separate files for the functions.
+
+    
+I watched a video by Ting Zhang (aka happygirlzt) to explain her thought process behind
+    solving a similar problem, when I got stuck using stacks and recursion. She used queues
+    and recursion, I found that some slight differences in implementation made a huge 
+    difference. Using switch statements also just make life a lot easier. My code is therefore 
+    similar to hers, but I made modifications to account for decimals, and I also developed the 
+    code to return exceptions for invalid inputs or syntax errors as well as the calculator's
+    ability to continously interact with the terminal for valid inputs.
+
+    Here is the video I watched.
+    https://www.youtube.com/watch?v=C_jxn1hTn6Q
 */
 
 
