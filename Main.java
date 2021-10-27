@@ -4,6 +4,32 @@ import java.util.ArrayDeque;
 import java.util.Queue;
 import java.util.Scanner;
 
+/*
+Hi! Welcome to my Java Calculator.
+
+It currently supports +, -, *, / as operators. 
+It also supports complex nested parentheses.
+As for decimals, those are also supported.
+
+It returns exceptions for any syntax errors related to parentheses and operators.
+It also returns exceptions for unsupported inputs (e.g. letters, or other alpha-
+    numeric codes outside of valid algebraic-nonvariable expressions).
+
+The calculator does not support variables, exponents, modulo, shift operators, etc.
+The calculator also does not utilize half-adders or any machine/low-level code needed to 
+    evaluate the operators from scratch.
+
+The only thing that might sometimes be glitchy is returning slightly innaccurate answers
+    (e.g. 3.154*2 - 6 = 0.3079999999... when the answer should just be 0.308)
+    This has to do with the nature of Java Doubles, but aside from that, the calculator
+    has very good accuracy.
+
+I kept all functions on this file because VSCode allows me to close all the functions
+    I am not currently working in. Had that not been the case, I would have just made 
+    separate files for the functions.
+*/
+
+
 public class Main{
     String s = "";
     public static void main(String[] args) throws Exception{
@@ -29,8 +55,9 @@ public class Main{
         x = SignCheck(x);
         x = CharacterCheck(x);
         x = ParenthesesCheck(x);
-        //
+        //calculates the expression
         double ret = Calculate(x);
+        //prints out final result
         System.out.println(ret);
     }
     public String SignCheck(String x) throws Exception{
