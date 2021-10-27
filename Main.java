@@ -39,6 +39,7 @@ I watched a video by Ting Zhang (aka happygirlzt) to explain her thought process
 
     Here is the video I watched.
     https://www.youtube.com/watch?v=C_jxn1hTn6Q
+    Her GitHub: https://github.com/happygirlzt
 */
 
 
